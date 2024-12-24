@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Signin
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/signin.css' %}">
+<link rel="icon" href="{% static 'img/Logo.png' %}">
+{% endblock css %}
+
+{% block body %}
+<h1 id="heading">Sign In</h1>
+<br>
+<a href="#" class="anchor">Phone</a>
+<div id="container">
+    <h4 id="mobile_heading">Mobile Number</h4>
+    <input type="number" name="Mobilenumber" id="mobile_number" placeholder="Enter Your Mobile Number">
+    <br>
+
+    <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=offline&scope=profile%20email&prompt=consent&response_type=code&client_id=64340559579-vsfhpema2m1qt0ghom6fopidmeoqe16m.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fsheryians.com%2Fsignin%2Fgoogle%2Fcallback&service=lso&o2v=2&ddm=1&flowName=GeneralOAuthFlow"><button id="Continue_button">Continue with Google</button>></a>
+    <br>
+    <a href="https://sheryians.com/signup/newuser"><button id="Createaccount_button">Create Account</button>
+    </a>
+</div>
+{% endblock body %}

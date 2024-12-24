@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#heading{
+    color: white;
+    font-size: 4.3vh;
+    position: relative;
+    top: 8%;
+    left: 36%;
+}
+.anchor{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    top: 8%;
+    left: 35%;
+    font-size: 2vh;
+}
+#container{
+    width: 25%;
+    height: 50%;
+    /* background-color: aquamarine; */
+    background-color: rgba(203, 197, 197, 0.096); 
+    position: relative;
+    top: 15%;
+    left: 35%;
+}
+#mobile_heading{
+    color: white;
+    font-size: 2.5vh;
+    padding-top: 5vh;
+    position: absolute;
+    left: 7%;
+}
+#mobile_number{
+    position: absolute;
+    top: 18%;
+    left: 7%;
+    color: white;
+    font-size: 1.9vh;
+    width: 80%;
+    height: 3vh;
+    background-color: black;
+    border: none;
+    outline: none;
+    backdrop-filter: blur(2.6vh);
+    border-radius: 5vh;
+    padding: 2vh;
+}
+
+
+#Continue_button{
+    position: absolute;
+    top: 49%;
+    left: 7%;
+    color: white;
+    font-size: 2.3vh;
+    width: 80%;
+    height: 7vh;
+    background-color: black;
+    border: none;
+    outline: none;
+    backdrop-filter: blur(2.6vh);
+    border-radius: 3vh;
+    text-align: center;
+}
+#Createaccount_button{
+    position: absolute;
+    top: 68%;
+    left: 7%;
+    color: white;
+    font-size: 2.3vh;
+    width: 80%;
+    height: 7vh;
+    background-color: black;
+    border: none;
+    outline: none;
+    backdrop-filter: blur(2.6vh);
+    border-radius: 3vh;
+}

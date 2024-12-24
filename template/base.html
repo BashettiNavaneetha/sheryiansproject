@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Base{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block css %}
+    {% endblock css %}
+</head>
+<body id="body1">
+
+    <nav id="nav_heading">🦁Sheryians coding school
+        <a href="{% url 'myapp:home' %}" id="home">Home</a>
+        <a href="{% url 'myapp:courses' %}" id="course">Courses</a>
+        <a href="{% url 'myapp:bootcamp' %}" id="bootcamp">Bootcamp(kodr)</a>
+        <a href="{% url 'myapp:requestcallback' %}" id="request">Request Callback</a>
+        <a href="{% url 'myapp:signin' %}"><button id="signin">SignIn</button></a>
+    </nav>
+
+    {% block body %}
+    {% endblock body %}
+
+</body>
+</html>

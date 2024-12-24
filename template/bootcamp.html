@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Bootcamp
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/bootcamp.css' %}">
+<link rel="icon" href="{% static 'img/Logo.png' %}">
+{% endblock css %}
+
+
+
+{% block body %}
+<pre id="boot_pre">
+    6 months In-House
+    Bootcamp programme- 
+    Kodr
+</pre>
+<input type="text" id="start_inputbox" value="Starts on: 11 Nov 2024" readonly>
+<input type="text"  id="placement_inputbox" value="Placement Assistance" readonly>
+<img src="{% static 'img/verified.png' %}" alt="" id="verified_icon">
+<h1 id="heading">Price 
+    <q>₹ 59000</q>
+</h1>
+<h3>[ 50,000 + 18% Gst ]</h3>
+<input type="text" value="Seats Are Full" id="seat_inputbox" readonly>
+<pre id="sub_pre">
+    we believe in,
+    <q id="sub_quote">Consistency.</q>No shortcuts
+</pre>
+<input type="text" value="MERN Stack⚡" id="mern_inputbox" readonly>
+<input type="text" value="Data Structures & Algorithm" id="data_inputbox" readonly>
+<input type="text" value="DBMS - SQL🤟" id="sql_inputbox" readonly>
+<input type="text" value="CORE CS Subjects⚙️" id="core_inputbox" readonly>
+<input type="text" value="Placement Assistance💰" id="assist_inputbox" readonly>
+<pre id="coding_pre">
+    Non-Stop 
+    <q id="coding_quote">5 Hours</q>
+    Coding
+</pre>
+<h3 id="everyday_heading">[ Everyday ]</h3>
+<p id="time_heading">Monday To Saturday. 11:00 AM TO 4:00 PM</p>
+<div id="secondvideo_container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pOGLAlGCKFE?si=Iss5GTHrHSwbU9NH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<h1 id="dominate_heading">Dominate.</h1>
+<h1 id="from_heading">From Start To Victory</h1>
+<form action="">
+    <datalist id="html_heading">
+        <option>HTML Basics</option>
+        <option>Semantic HTML</option>
+        <option>Forms and VAlidation</option>
+        <option>Multimedia Elemnets(Audio, Video)</option>
+        <option>CSS Fundamentals</option>
+        <option>CSS Box Model</option>
+        <option>Grid Layout</option>
+        <option>CSS Animation</option>
+        <option>Transitions</option>
+    </datalist>
+</form>
+<hr id="horizontalline">
+<div id="footer_container">
+    <footer>
+       <div id="about_div">
+        <pre>
+        COMPANY <br>
+        About
+        Support
+        Privacy Policy
+        Terms and Condition
+        Pricing and Refund
+        Hire From Us
+        Bug Bounty
+        </pre>
+       </div>
+       <div id="community_div">
+        <pre>
+        COMMUNITY <br>
+        Inertia
+        Discord
+        </pre>
+       </div>
+       <div id="Getin_div">
+        <pre>
+        Get In Touch <br>
+        +91 8109161752,
+        +91 9691778470
+        hello@sheryians.com
+        23-B, Indurapuri Sector C,
+        Bhopal(MP), 462021
+        </pre>
+       </div>
+       <div id="links_div">
+        <img src="{% static 'img/Logo.png' %}" alt="" id="logo_image">
+        <p id="connect_para">Let's connect with our socials</p>
+    </div>
+    <!-- <img src="{% static 'img/insta.png'}" alt="" id="insta_logo"><a href="https://www.instagram.com/sheryians_coding_school/"></a> -->
+    <a href="https://www.instagram.com/sheryians_coding_school/"><img src="{% static 'img/insta.png'}" alt="" id="insta_logo"></a>
+    <a href="https://in.linkedin.com/company/the-sheryians-coding-school"><img src="" alt=""></a>
+    <a href="https://www.youtube.com/@thesheryianscodingschool"></a>
+    <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsheryian"></a>
+    </footer>
+</div>
+
+{% endblock body %}

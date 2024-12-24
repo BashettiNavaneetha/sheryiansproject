@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Courses
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/courses.css' %}">
+<link rel="icon" href="{% static 'img/Logo.png' %}">
+{% endblock css %}
+
+{% block body %}
+<pre id="pre_content">
+    We're not a <q>course</q>
+    <q>factory.</q>
+</pre>
+<p id="first_paragraph">We focus on courses that really help</p><br>
+<p id="second_paragraph">Courses which do work ↓</p>
+
+<img src="{% static 'img/1.jpg' %}" alt="" id="one_image">
+<a href="https://sheryians.com/courses/courses-details/Three.js%20Domination"><button id="first_view_course">View Details</button></a><br>
+<img src="{% static 'img/2.jpg' %}" alt="" id="two_image">
+<a href="https://sheryians.com/courses/courses-details/Back-End%20Domination:%20Create%20Efficient%20Back-End."> <button id="second_view_course">View Details</button>
+</a>
+<br><img src="{% static 'img/3.png' %}" alt="" id="third_image">
+<a href="https://sheryians.com/courses/courses-details/Java%20&%20DSA%20Domination"><button id="third_view_course">View Details</button></a>
+
+
+
+
+<hr id="horizontalline">
+<div id="footer_container">
+    <footer>
+       <div id="about_div">
+        <pre>
+        COMPANY <br>
+        About
+        Support
+        Privacy Policy
+        Terms and Condition
+        Pricing and Refund
+        Hire From Us
+        Bug Bounty
+        </pre>
+       </div>
+       <div id="community_div">
+        <pre>
+        COMMUNITY <br>
+        Inertia
+        Discord
+        </pre>
+       </div>
+       <div id="Getin_div">
+        <pre>
+        Get In Touch <br>
+        +91 8109161752,
+        +91 9691778470
+        hello@sheryians.com
+        23-B, Indurapuri Sector C,
+        Bhopal(MP), 462021
+        </pre>
+       </div>
+       <div id="links_div">
+        <img src="{% static 'img/Logo.png' %}" alt="" id="logo_image">
+        <p id="connect_para">Let's connect with our socials</p>
+    </div>
+    <!-- <img src="{% static 'img/insta.png'}" alt="" id="insta_logo"><a href="https://www.instagram.com/sheryians_coding_school/"></a> -->
+    <a href="https://www.instagram.com/sheryians_coding_school/"><img src="{% static 'img/insta.png'}" alt="" id="insta_logo"></a>
+    <a href="https://in.linkedin.com/company/the-sheryians-coding-school"><img src="" alt=""></a>
+    <a href="https://www.youtube.com/@thesheryianscodingschool"></a>
+    <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsheryian"></a>
+    </footer>
+</div>
+
+{% endblock body %}

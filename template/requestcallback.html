@@ -1,0 +1,38 @@
+{% extends 'home.html' %}
+
+
+{% load static %}
+
+{% block title %}
+Requestcallback
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/requestcallback.css' %}">
+<link rel="icon" href="{% static 'img/Logo.png' %}">
+{% endblock css %}
+
+{% block js %}
+<script src="{% static 'js/requestcallback.js' %}"></script>
+{% endblock js %}
+
+{% block body %}
+<div id="request_container">
+    <div id="otp_container">
+        <span id="close_icon" onclick="toCloseOTPContainer()">+</span>
+    </div>
+    <h1 id="request_heading">Request a callback</h1>
+    <p id="fill_paragraph">Fill the formm below to request a callback from our team</p>
+    <form action="">
+        <label for="" id="name_heading">Name</label>
+        <br><input type="text" placeholder="Name" id="name_inputbox" required>
+        <br><br>
+        <label for="" id="password_heading">Phone</label>
+        <br><input type="number" placeholder="Phone" id="password_inputbox" required>
+
+        <label for="" id="select_heading">Select Date and Time</label><br>
+        <input type="datetime-local" name="" id="date_heading" required><br>
+        <button id="submit_button">Submit</button>
+    </form>
+</div>
+{% endblock body %}

@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<link rel="icon" href="{% static 'img/Logo.png' %}">
+{% endblock css %}
+
+{% block body %}
+<pre id="first_pre">
+    We only <q>teach</q>
+    What we are really
+    really <i>good</i> at.
+</pre>
+
+<a href="{% url 'myapp:courses' %}" id="sub_courses">
+    <button id="check_button">Check Courses-Make an Imapct</button>
+</a>
+<pre id="second_pre">
+    Get ready to <q>accelearete your
+    career</q> with customized Courses
+    and leave your mark in the tech
+    industry
+</pre>
+<div id="first_div">
+    <h2>25K+</h2>
+    <p id="First_content">Student taught</p>
+</div>
+<div id="second_div">
+    <h2>20+</h2>
+    <p>Instructors</p>
+</div>
+<div id="third_div">
+    <h2>431K+</h2>
+    <p>Youtube Subs.</p>
+</div>
+<pre id="third_pre">
+    we do whatever it takes to help you
+    <q>understand the concepts.</q>
+</pre>
+<div id="video_container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/60SRAWmMXyc?si=398elUFGq_YVyxjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video_embed"></iframe>
+</div>
+<a href="https://www.youtube.com/@thesheryianscodingschool" target="_blank">
+    <button id="explore_button">Explore free learning</button>
+</a>
+<div id="top_container">
+    <pre id="top_pre">
+        Top <q id="top_quote">companies</q> our students
+        working with
+    </pre>
+</div>
+<img src="{% static 'img/netlink.png' %}" alt="" id="netlink_image">
+<img src="{% static 'img/mindtree.png' %}" alt="" id="mindtree_image">
+<img src="{% static 'img/walmart.png' %}" alt="" id="walmart_image">
+<img src="{% static 'img/wipro.png' %}" alt="" id="wipro_image">
+<img src="{% static 'img/tcs.png' %}" alt="" id="tcs_image">
+<img src="{% static 'img/geeks.png' %}" alt="" id="geek_image">
+<a href="{% url 'myapp:courses' %}" id="sub_courses">
+    <button id="explore_courses_button">Explore Courses</button></a>
+<hr id="horizontalline">
+<div id="footer_container">
+    <footer>
+       <div id="about_div">
+        <pre>
+        COMPANY <br>
+        About
+        Support
+        Privacy Policy
+        Terms and Condition
+        Pricing and Refund
+        Hire From Us
+        Bug Bounty
+        </pre>
+       </div>
+       <div id="community_div">
+        <pre>
+        COMMUNITY <br>
+        Inertia
+        Discord
+        </pre>
+       </div>
+       <div id="Getin_div">
+        <pre>
+        Get In Touch <br>
+        +91 8109161752,
+        +91 9691778470
+        hello@sheryians.com
+        23-B, Indurapuri Sector C,
+        Bhopal(MP), 462021
+        </pre>
+       </div>
+       <div id="links_div">
+        <img src="{% static 'img/Logo.png' %}" alt="" id="logo_image">
+        <p id="connect_para">Let's connect with our socials</p>
+    </div>
+    <!-- <img src="{% static 'img/insta.png'}" alt="" id="insta_logo"><a href="https://www.instagram.com/sheryians_coding_school/"></a> -->
+    <a href="https://www.instagram.com/sheryians_coding_school/"><img src="{% static 'img/insta.png'}" alt="" id="insta_logo"></a>
+    <a href="https://in.linkedin.com/company/the-sheryians-coding-school"><img src="" alt=""></a>
+    <a href="https://www.youtube.com/@thesheryianscodingschool"></a>
+    <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsheryian"></a>
+    </footer>
+</div>
+
+{% endblock body %}
